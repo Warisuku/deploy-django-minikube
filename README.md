@@ -6,10 +6,10 @@
 3. cd into directory `cd deploy-django-minikube`
 
 ## VM
-1. pull image
+1. pull image  
     django-app `docker pull warisk/django-app`  
     proxy-app `docker pull warisk/django-proxy`
-2. load image
+2. load image  
     django-app `minikube image load warisk/django-app`
     proxy-app `minikube image load warisk/django-proxy`
 
