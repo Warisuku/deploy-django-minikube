@@ -2,6 +2,6 @@
 
 ## Procedure
 Start Minikube 
-`minikube start` 
+`minikube start`  
 Apply K8s config files 
 `kubectl apply -k deploy/`
