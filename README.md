@@ -10,7 +10,7 @@
     django-app `docker pull warisk/django-app`  
     proxy-app `docker pull warisk/django-proxy`
 2. load image  
-    django-app `minikube image load warisk/django-app`
+    django-app `minikube image load warisk/django-app`  
     proxy-app `minikube image load warisk/django-proxy`
 
 
