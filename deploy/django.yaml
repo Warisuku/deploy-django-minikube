@@ -6,7 +6,8 @@ metadata:
     app: django
 spec:
   ports:
-    - port: 8000
+    - port: 80
+      targetPort: 8000
   selector:
     app: django
     tier: app
@@ -53,8 +54,7 @@ spec:
           persistentVolumeClaim:
             claimName: django-app-pvc
       containers:
-        - image: django-app:latest
-          imagePullPolicy: Never
+        - image: warisk/django-app:latest
           name: app
           volumeMounts:
             - name: django-app-data
@@ -79,8 +79,7 @@ spec:
                   name: django
                   key: secret
 
-        - image: django-proxy:latest
-          imagePullPolicy: Never
+        - image: warisk/django-proxy:latest
           name: proxy
           ports:
             - containerPort: 8000

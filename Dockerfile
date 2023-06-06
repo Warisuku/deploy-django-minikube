@@ -20,4 +20,4 @@ COPY ./app /app
 WORKDIR /app
 EXPOSE 80
 
-CMD ["/scripts/run.sh"]
+CMD ["/usr/bin/env", "python", "/scripts/run.py"]
